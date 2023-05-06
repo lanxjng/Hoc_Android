@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <TextView
+        android:id="@+id/tvQuenMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Mật Khẩu"
+        android:textAllCaps="true"
+        android:textColor="#EF410A"
+        android:textSize="40sp" />
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/edtUser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuenMK"
+        android:hint="Username :"
+        android:textSize="30sp"
+        android:gravity="left"
+
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtPass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUser1"
+        android:hint="Password :"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:inputType="textPassword"
+
+        />
+
+    <EditText
+        android:id="@+id/edtRePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPass1"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:hint="Re_password :"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+
+        />
+    <Button
+
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/btnDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtRePass"
+        android:text="Đăng Nhập"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="#edffac06"
+
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtRePass"
+        android:layout_toRightOf="@+id/btnDN"
+        android:text="Thoát"
+        android:textSize="15sp"
+        android:background="#edffac06"
+
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDBFD4"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_doc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03"
+
+        />
+
+    <TextView
+        android:id="@+id/tvDky"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Tài Khoản"
+        android:textSize="30sp"
+        android:textColor="#0B0B09"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+
+        android:id="@+id/tvThongTin"
+        android:background="#8E8E89"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0B0B09"
+        android:layout_marginTop="5dp"
+        android:text="Thông tin tài khoản"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDky"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+
+        />
+    <TextView
+        android:id="@+id/tvTk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvThongTin"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <EditText
+        android:id="@+id/edtTk"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/tvThongTin"
+        android:hint="Ví dụ: hoangthuuyen "
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvMk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật Khẩu*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTk"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <EditText
+        android:id="@+id/edtMk"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/edtTk"
+        android:hint="Mật khẩu ít nhất 6 ký tự "
+        android:textSize="16sp"
+
+        />
+    <TextView
+        android:id="@+id/tvMK2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận mật khẩu*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvMk"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+        />
+    <EditText
+        android:id="@+id/edtMk2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/edtMk"
+        android:hint="Mật khẩu ít nhất 6 ký tự"
+        android:textSize="16sp"
+
+        />
+    <TextView
+
+        android:background="#8E8E89"
+        android:id="@+id/tvThongTinNgDung"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0B0B09"
+        android:layout_marginTop="5dp"
+        android:text="Thông tin tài khoản"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvMK2"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <TextView
+        android:id="@+id/tvHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họ và Tên*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvThongTinNgDung"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+        />
+    <EditText
+        android:id="@+id/edtHoTen"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/tvThongTinNgDung"
+        android:hint="Ví dụ: Hoàng Thị Thu Uyên"
+        android:textSize="16sp"
+
+        />
+    <TextView
+        android:id="@+id/tvDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quận/Huyện/Thị*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoTen"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+
+    <Spinner
+        android:id="@+id/spDiaChi"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/edtHoTen"
+        />
+
+    <TextView
+        android:id="@+id/tvTruong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="15dp"
+        android:textColor="#3C3C34"
+        android:text="Trường*"
+        android:textSize="18sp"
+
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiaChi" />
+
+    <Spinner
+        android:id="@+id/spTruong"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/spDiaChi"
+        />
+    <EditText
+        android:id="@+id/edtLop"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/spTruong"
+        app:layout_constraintTop_toBottomOf="@+id/spDiaChi"
+        android:hint="Lớp "
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvNgaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày Sinh*"
+        android:textSize="18sp"
+        android:textColor="#3C3C34"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTruong"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <TextView
+        android:id="@+id/tvNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày:"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/spTruong"
+        />
+
+    <Spinner
+        android:id="@+id/spNgay"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvNgay"
+        app:layout_constraintTop_toBottomOf="@+id/spTruong"
+        />
+    <TextView
+        android:id="@+id/tvThang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tháng:"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/spNgay"
+        app:layout_constraintTop_toBottomOf="@+id/spTruong"
+        />
+
+    <Spinner
+        android:id="@+id/spThang"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/tvThang"
+        app:layout_constraintTop_toBottomOf="@+id/spTruong"
+        />
+    <TextView
+        android:id="@+id/tvNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Năm:"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/spThang"
+        app:layout_constraintTop_toBottomOf="@+id/spTruong"
+        />
+
+    <Spinner
+        android:id="@+id/spNam"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvNam"
+        app:layout_constraintTop_toBottomOf="@+id/spTruong"
+        />
+    <TextView
+        android:id="@+id/tvGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNgaySinh"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <RadioGroup
+        android:id="@+id/rdGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/tvNgay"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rdbtnNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:checked="true"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rdbtnNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nu"
+            >
+        </RadioButton>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tvDiaChiCuThe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGioiTinh"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <EditText
+        android:id="@+id/edtDiaChiCuThe"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/rdGioiTinh"
+        android:hint="Địa chỉ nới ở hiện tại"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvSdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điện thoại*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiaChiCuThe"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <EditText
+        android:id="@+id/edtSdt"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/edtDiaChiCuThe"
+        android:hint="Số điện thoại của bạn"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvGhiChu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ban tổ chức se liên hệ só này khi bạn trúng giải"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtSdt"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email*"
+        android:textColor="#3C3C34"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGhiChu"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc1"
+
+        />
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        app:layout_constraintTop_toBottomOf="@+id/tvGhiChu"
+        android:hint="Email của bạn"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tvGhiChu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập chính xác email của bạn dể kích hoạt tk"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        app:layout_constraintLeft_toRightOf="@+id/gl_doc"
+        />
+    <Button
+        android:id="@+id/btnDky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvGhiChu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#ff0"
+        android:text="Đăng Ký"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

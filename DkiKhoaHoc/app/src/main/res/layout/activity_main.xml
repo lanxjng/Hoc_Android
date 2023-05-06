@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBBAF1"
+    android:padding="6dp"
+    android:weightSum="11"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Khóa Học"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="35dp"
+        android:textColor="#F10354"
+        />
+    <EditText
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edtHoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:hint="Nhập Họ Tên"
+
+        />
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edtSdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:hint="Nhập Số Điện Thoại"
+
+        />
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:hint="Nhập Địa Chỉ"
+
+        />
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:hint="Nhập Email"
+
+        />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới Tính"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rbtNam"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Nam"
+                android:textSize="20sp"
+                />
+            <RadioButton
+                android:id="@+id/rbtNu"
+                android:layout_marginLeft="15dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:textSize="20sp"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Khóa Học"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#1032EA"
+        android:layout_marginTop="15dp"
+
+        />
+    <CheckBox
+        android:layout_weight="1"
+        android:id="@+id/ckbAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lập Trình Android"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#011302"
+
+        />
+    <CheckBox
+        android:layout_weight="1"
+        android:id="@+id/ckbWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lập Trình Web"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#011302"
+
+        />
+    <CheckBox
+        android:layout_weight="1"
+        android:id="@+id/ckbNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lập Trình .NET"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#011302"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+
+        >
+        <Button
+            android:id="@+id/btnDky"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_marginLeft="100dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="danh sách học phần"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:background="#0CECD7"
+        android:textSize="30sp"
+        >
+
+    </TextView>
+    <EditText
+        android:id="@+id/edt_HP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập môn học"
+        android:textSize="20sp"
+
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+    >
+        <TableRow>
+            <Button
+                android:text="Thêm"
+                android:id="@+id/btnThem"
+                android:layout_marginLeft="10dp"
+                />
+            <Button
+                android:text="Sửa"
+                android:id="@+id/btnSua"
+                android:layout_marginLeft="10dp"
+            />
+            <Button
+                android:text="Xoá"
+                android:id="@+id/btnXoa"
+                android:layout_marginLeft="10dp"
+                />
+            <Button
+                android:text="Thoát"
+                android:id="@+id/btnThoat"
+                android:layout_marginLeft="10dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <ListView
+        android:id="@+id/Lv_HP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    </ListView>
+
+</LinearLayout>

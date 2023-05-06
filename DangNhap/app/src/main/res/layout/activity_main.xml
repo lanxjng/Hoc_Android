@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4B7"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <TextView
+        android:id="@+id/tvDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Đăng Nhập"
+        android:textAllCaps="true"
+        android:textColor="#026EA8"
+        android:textSize="40sp" />
+
+    <EditText
+        android:layout_marginTop="80dp"
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDangNhap"
+        android:hint="Username :"
+        android:textSize="30sp"
+        android:gravity="left"
+
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUserName"
+        android:hint="Password :"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:inputType="textPassword"
+
+        />
+    <Button
+
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btnDangNhap"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassWord"
+        android:text="Đăng Nhập"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="#edffac06"
+
+        />
+
+    <Button
+        android:id="@+id/btnQuenMk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassWord"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/btnDangNhap"
+        android:background="#edffac06"
+        android:gravity="center"
+        android:text="Quên Mật Khẩu"
+        android:textSize="15sp" />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassWord"
+        android:layout_toRightOf="@+id/btnQuenMk"
+        android:text="Thoát"
+        android:textSize="15sp"
+        android:background="#edffac06"
+
+
+        />
+
+
+</RelativeLayout>
